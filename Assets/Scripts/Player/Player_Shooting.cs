@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Shooting : MonoBehaviour {
 
@@ -12,6 +13,8 @@ public class Player_Shooting : MonoBehaviour {
     private Transform Player;
     [SerializeField]
     private Rigidbody rigidbody;
+
+    public Text reloadText;
 
     float dir;
     float timer;
@@ -47,6 +50,13 @@ public class Player_Shooting : MonoBehaviour {
             anim.SetTrigger("Shoot");
             rigidbody.AddForce(-Player.transform.forward * 400);
         }
+
+        if(bulletsLeft == 0)
+        {
+            reloadText.gameObject.SetActive(true);
+        }else{
+            reloadText.gameObject.SetActive(false);
+        }
     }
 
 
@@ -54,14 +64,14 @@ public class Player_Shooting : MonoBehaviour {
     {
         if (Bullet)
         {
-            for(int i = 0; i < 5; i++)
+            for(int i = 0; i < 10; i++)
             Instantiate(Bullet, gunEnd.transform.position, transform.rotation);
         }
     }
 
     void Reload()
     {
-        if (Input.GetKeyDown("r") && clips > 0 && bulletsLeft < 3 )
+        if (Input.GetKeyDown("r") && clips > 0 && bulletsLeft < 3 || Input.GetMouseButtonDown(1) && clips > 0 && bulletsLeft < 3 )
         { 
                 clips--;
                 Debug.Log("Reload");

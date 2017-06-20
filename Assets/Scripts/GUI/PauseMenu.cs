@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour {
-
+    public AudioSource backgroundMusic;
     public GameObject Canvas;
     public GameObject Camera;
     bool Paused = false;
@@ -19,12 +19,14 @@ public class PauseMenu : MonoBehaviour {
         {
             if (Paused == true)
             {
+                backgroundMusic.Play();
                 Time.timeScale = 1.0f;
                 Canvas.gameObject.SetActive(false);
                 Paused = false;
             }
             else
             {
+                backgroundMusic.Stop();
                 Time.timeScale = 0.0f;
                 Canvas.gameObject.SetActive(true);
                 Cursor.visible = true;

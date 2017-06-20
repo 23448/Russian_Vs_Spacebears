@@ -26,16 +26,16 @@ public class HSController : MonoBehaviour
 
 	}
 	void Start(){
-		//startGetScores ();
-		//startPostScores ();
+		startGetScores ();
+		startPostScores ();
 
 		//
 		//HSController.Instance.startGetScores ();
 	}
 
 	private string secretKey = "123456789"; // Edit this value and make sure it's the same as the one stored on the server
-	string addScoreURL = "tutorial.bplaced.net/addscore.php?"; //be sure to add a ? to your url
-	string highscoreURL = "tutorial.bplaced.net/display.php";
+	string addScoreURL = "http://23448.hosts.ma-cloud.nl/bewijzenmap/IDP/addscore.php"; //be sure to add a ? to your url
+	string highscoreURL = "http://23448.hosts.ma-cloud.nl/bewijzenmap/IDP/display.php";
 
 	//for testing
 	public string uniqueID;

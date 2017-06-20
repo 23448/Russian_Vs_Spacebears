@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour {
     public Image damgeImage;
     public Sprite hurtimage;
 
+    
+
     Player_Movement playerMovement;
     Player_Shooting playerShooting;
 

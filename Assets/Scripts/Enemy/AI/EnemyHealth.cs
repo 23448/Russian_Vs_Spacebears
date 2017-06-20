@@ -76,7 +76,7 @@ public class EnemyHealth : MonoBehaviour {
         if(other.gameObject.tag == "Bullet")
         {
             Destroy(other.gameObject);
-            TakeDamage(20, transform.position);
+            TakeDamage(10, transform.position);
             anim.SetTrigger("GetHit");
         }
     }

@@ -16,10 +16,12 @@ public class WaveSpawner : MonoBehaviour {
         public int count;
         public float rate;
     }
+    EnemyHealth bearHealth;
 
     public GameObject Canvas;
     public Text waveText;
     public Text factText;
+    public Text continueText;
 
     public Wave[] waves;
     public static int nextWave = 1;
@@ -32,13 +34,17 @@ public class WaveSpawner : MonoBehaviour {
     private float searchCountdown = 1f;
 
     private SpawnState state = SpawnState.COUNTING;
-    private int[] factWaves = { 2, 5, 8, 10 };
+    private int[] factWaves = { 2, 4, 6, 8, 10, 12, 14};
     private string[] facts =
     {
-        "fact 1",
-        "fact 2",
-        "fact 3",
-        "fact 4",
+        "Wanneer je naar de sterren kijkt, kijk je eigenlijk terug in de tijd. Omdat het licht van de sterren heel lang duurt voordat het de aarde heeft bereikt.",
+        "Het is een mythe dat NASA miljoenen dollars heeft uitgegeven om een pen uit te vinden die in de ruimte werkt. De russen gebruikte gewoon een potlood.",
+        "NASA heeft een planet gevonden genaamd “Waterwereld”. De planeet ligt 40 lichtjaren hier vandaan en bevat exotische materialen zoals heet ijs en super vloeibaar water.",
+        "In 2006 heeft NASA toegegeven dat ze niet langer de originele videobanden van de maanlanding hadden omdat ze overgetaped zijn.",
+        "Het duurt NASA 32 uur om met het ruimtestation Voyager I te communiceren met een bandbreedte van 115.2 KB per seconden.",
+        "De ruimte begint al op 100 km hoogte als auto’s recht omhoog kunnen rijden zou je dus binnen een uur in de ruimte kunnen zijn.",
+        "Het woord Astronaut komt van het griekse woord “Astron” wat ster betekent en “Nautes” wat zeiler betekent.",
+        "Als je huilt in de ruimte blijven de tranen aan je gezicht plakken.",
     };
 
     void Start()
@@ -50,6 +56,8 @@ public class WaveSpawner : MonoBehaviour {
         }
         
         waveCountdown = timeBetweenWaves;
+
+        bearHealth = GetComponent<EnemyHealth>();
     }
 
     public void Update()
@@ -102,7 +110,14 @@ public class WaveSpawner : MonoBehaviour {
         Time.timeScale = 0f;
         Canvas.gameObject.SetActive(true);
         factText.text = "" + fact;
-        yield return new WaitForSecondsRealtime(5.0f);
+        continueText.gameObject.SetActive(false);
+        yield return new WaitForSecondsRealtime(2.0f);
+        continueText.gameObject.SetActive(true);
+        while (!Input.GetKey(KeyCode.Space))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
         Canvas.gameObject.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -123,6 +138,7 @@ public class WaveSpawner : MonoBehaviour {
         else
         {
             nextWave++;
+            
 
             if (factWaves.Contains(nextWave))
             {

@@ -21,10 +21,6 @@ public class Player_Movement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
-            currentSpeed = runspeed;
-        else
-            currentSpeed = speed;
 
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -89,3 +85,6 @@ public class Player_Movement : MonoBehaviour {
             anim.SetBool("IsWalkingRL", wallkingRL);
     }
 }
+
+
+//check

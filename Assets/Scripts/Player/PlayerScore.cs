@@ -11,12 +11,12 @@ public class PlayerScore : MonoBehaviour {
 
     public void Start()
     {
-        scoreText.text = "Score : " + score;
+        scoreText.text = "SCORE : " + score;
     }
 
     public void Update()
     {
-        scoreText.text = "Score : " + score;
+        scoreText.text = "SCORE : " + score;
     }
 
 }

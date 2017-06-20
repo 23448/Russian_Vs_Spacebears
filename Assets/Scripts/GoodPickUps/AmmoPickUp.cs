@@ -50,7 +50,7 @@ public class AmmoPickUp : MonoBehaviour {
         if (currentDistance < distance && Input.GetKeyDown("e"))
         {
             Debug.Log("Moan23");
-            Shots.clips += 5;
+            Shots.clips += 3;
             Destroy(gameObject);
         }
     }
