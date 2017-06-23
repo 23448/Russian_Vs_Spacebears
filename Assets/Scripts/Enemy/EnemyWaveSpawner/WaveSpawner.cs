@@ -182,6 +182,11 @@ public class WaveSpawner : MonoBehaviour {
         Debug.Log("Spawning Enemy:" + _enemy.name);
 
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        Instantiate(_enemy, _sp.position, _sp.rotation);
+
+        RaycastHit info;
+        if (Physics.Raycast(_sp.position, Vector3.down, out info, float.PositiveInfinity))
+        {
+            Instantiate(_enemy, info.point, Quaternion.identity);
+        }
     }
 }
