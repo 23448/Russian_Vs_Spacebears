@@ -1,0 +1,79 @@
+Mono path[0] = 'D:/Floyd/Documenten/bewijzenmap/p1.4/Russian Vs SpaceBears/Build/Demo/r_Data/Managed'
+Mono path[1] = 'D:/Floyd/Documenten/bewijzenmap/p1.4/Russian Vs SpaceBears/Build/Demo/r_Data/Mono'
+Mono config path = 'D:/Floyd/Documenten/bewijzenmap/p1.4/Russian Vs SpaceBears/Build/Demo/r_Data/Mono/etc'
+PlayerConnection initialized from D:/Floyd/Documenten/bewijzenmap/p1.4/Russian Vs SpaceBears/Build/Demo/r_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55225
+Multi-casting "[IP] 25.78.68.7 [Port] 55225 [Flags] 2 [Guid] 2614380233 [EditorId] 3605352291 [Version] 1048832 [Id] WindowsPlayer(MSI) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55225]
+PlayerConnection already initialized - listening to [0.0.0.0:55225]
+Player data archive not found at `D:/Floyd/Documenten/bewijzenmap/p1.4/Russian Vs SpaceBears/Build/Demo/r_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
+    Vendor:   NVIDIA
+    VRAM:     3035 MB
+    Driver:   21.21.13.7654
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.020 seconds
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Build\Demo\r_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.247403 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at MovieCript.Start () [0x0001f] in D:\Floyd\Documenten\bewijzenmap\p1.4\Russian Vs SpaceBears\Russian Vs SpaceBears\Assets\Main Menu\MovieCript.cs:18 
+ 
+(Filename: D:/Floyd/Documenten/bewijzenmap/p1.4/Russian Vs SpaceBears/Russian Vs SpaceBears/Assets/Main Menu/MovieCript.cs Line: 18)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2a2c -> priority: 1 
+  Thread -> id: 1cec -> priority: 1 
+  Thread -> id: 3b80 -> priority: 1 
+  Thread -> id: 3adc -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 470.004822 ms
+System memory in use before: 45.0 MB.
+System memory in use after: 37.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1402.
+Total: 1.258482 ms (FindLiveObjects: 0.065276 ms CreateObjectMapping: 0.036467 ms MarkObjects: 0.373059 ms  DeleteObjects: 0.782585 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.715154 ms
+System memory in use before: 35.2 MB.
+System memory in use after: 35.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1402.
+Total: 0.484284 ms (FindLiveObjects: 0.068922 ms CreateObjectMapping: 0.040478 ms MarkObjects: 0.358837 ms  DeleteObjects: 0.014951 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.022556 ms
+System memory in use before: 35.1 MB.
+System memory in use after: 35.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1402.
+Total: 0.619577 ms (FindLiveObjects: 0.100649 ms CreateObjectMapping: 0.040113 ms MarkObjects: 0.436512 ms  DeleteObjects: 0.040478 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.758169 ms
+System memory in use before: 35.1 MB.
+System memory in use after: 35.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1402.
+Total: 0.465321 ms (FindLiveObjects: 0.059806 ms CreateObjectMapping: 0.035373 ms MarkObjects: 0.355190 ms  DeleteObjects: 0.014222 ms)
+
