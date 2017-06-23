@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public int startingHealth = 100;
     public int currentHealth;
+    public int maxHealth = 100;
     public Slider healthSlider;
     public float flashSpeed = 0.1f;
     public Image damgeImage;
@@ -21,13 +22,15 @@ public class PlayerHealth : MonoBehaviour {
     AudioSource Moan;
 
     public GameObject Test;
+    public GameObject username;
     Animator anim;
 
     bool damaged = false;
     bool IsDead = false;
 
     public void Awake()
-    { 
+    {
+        username.gameObject.SetActive(false);
         anim = GetComponent<Animator>();
         currentHealth = startingHealth;
         playerMovement = GetComponent<Player_Movement>();
@@ -59,6 +62,7 @@ public class PlayerHealth : MonoBehaviour {
         Moan.Stop();
 
         anim.SetTrigger("Die");
+        username.gameObject.SetActive(true);
 
         playerMovement.enabled = false;
         playerShooting.enabled = false;

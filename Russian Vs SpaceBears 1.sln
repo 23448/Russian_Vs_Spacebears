@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Russian Vs SpaceBears 1.Plugins", "Russian Vs SpaceBears 1.Plugins.csproj", "{303CD14D-8F50-546D-E10E-8A9BF88669EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Russian Vs SpaceBears 1", "Russian Vs SpaceBears 1.csproj", "{FFB0F62D-E4FF-436D-3F11-B42BB9268369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Russian Vs SpaceBears 1.Editor.Plugins", "Russian Vs SpaceBears 1.Editor.Plugins.csproj", "{BA198CA8-68D0-A744-21E7-E32B66A2858F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{303CD14D-8F50-546D-E10E-8A9BF88669EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303CD14D-8F50-546D-E10E-8A9BF88669EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303CD14D-8F50-546D-E10E-8A9BF88669EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303CD14D-8F50-546D-E10E-8A9BF88669EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB0F62D-E4FF-436D-3F11-B42BB9268369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB0F62D-E4FF-436D-3F11-B42BB9268369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB0F62D-E4FF-436D-3F11-B42BB9268369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB0F62D-E4FF-436D-3F11-B42BB9268369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA198CA8-68D0-A744-21E7-E32B66A2858F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA198CA8-68D0-A744-21E7-E32B66A2858F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA198CA8-68D0-A744-21E7-E32B66A2858F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA198CA8-68D0-A744-21E7-E32B66A2858F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

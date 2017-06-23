@@ -43,7 +43,7 @@ public class HealthPickUp : MonoBehaviour {
             AmmoPickUp.pickupText.ShowText(screenpos);
         }
 
-        if (currentDistance < distance && Input.GetKeyDown("e"))
+        if (currentDistance < distance && Input.GetKeyDown("e") && Health.currentHealth != 100)
         {
             clips.clips++;
             Health.currentHealth += 20;
