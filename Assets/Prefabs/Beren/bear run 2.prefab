@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeedNormal: 5
-  moveSpeedRunning: 10
+  moveSpeedRunning: 15
   maxSprintWaitTime: 30
   sprintTime: 3
 --- !u!114 &114651402798969852
