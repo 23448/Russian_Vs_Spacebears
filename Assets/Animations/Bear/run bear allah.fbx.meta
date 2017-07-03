@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: ba7a2082f484edc459a8624ef2a30421
+timeCreated: 1497612180
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CINEMA_4D_Editor
+    100002: hoofd
+    100004: L_arm_elbow
+    100006: L_arm_hand
+    100008: L_arm_top
+    100010: L_arm_wrist
+    100012: L_legg_feet
+    100014: L_legg_knee
+    100016: L_legg_top
+    100018: neck
+    100020: R_arm_elbow
+    100022: R_arm_hand
+    100024: R_arm_top
+    100026: R_arm_wrist
+    100028: R_legg_feet
+    100030: R_legg_knee
+    100032: R_legg_top
+    100034: //RootNode
+    100036: schouders
+    100038: spline
+    100040: Symmetry
+    100042: torso
+    400000: CINEMA_4D_Editor
+    400002: hoofd
+    400004: L_arm_elbow
+    400006: L_arm_hand
+    400008: L_arm_top
+    400010: L_arm_wrist
+    400012: L_legg_feet
+    400014: L_legg_knee
+    400016: L_legg_top
+    400018: neck
+    400020: R_arm_elbow
+    400022: R_arm_hand
+    400024: R_arm_top
+    400026: R_arm_wrist
+    400028: R_legg_feet
+    400030: R_legg_knee
+    400032: R_legg_top
+    400034: //RootNode
+    400036: schouders
+    400038: spline
+    400040: Symmetry
+    400042: torso
+    4300000: Symmetry
+    7400000: CINEMA_4D_Main
+    9500000: //RootNode
+    13700000: Symmetry
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CINEMA_4D_Main
+      takeName: CINEMA_4D_Main
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CINEMA_4D_Editor
+        weight: 1
+      - path: spline
+        weight: 1
+      - path: spline/L_legg_top
+        weight: 1
+      - path: spline/L_legg_top/L_legg_knee
+        weight: 1
+      - path: spline/L_legg_top/L_legg_knee/L_legg_feet
+        weight: 1
+      - path: spline/R_legg_top
+        weight: 1
+      - path: spline/R_legg_top/R_legg_knee
+        weight: 1
+      - path: spline/R_legg_top/R_legg_knee/R_legg_feet
+        weight: 1
+      - path: spline/torso
+        weight: 1
+      - path: spline/torso/schouders
+        weight: 1
+      - path: spline/torso/schouders/L_arm_top
+        weight: 1
+      - path: spline/torso/schouders/L_arm_top/L_arm_elbow
+        weight: 1
+      - path: spline/torso/schouders/L_arm_top/L_arm_elbow/L_arm_wrist
+        weight: 1
+      - path: spline/torso/schouders/L_arm_top/L_arm_elbow/L_arm_wrist/L_arm_hand
+        weight: 1
+      - path: spline/torso/schouders/neck
+        weight: 1
+      - path: spline/torso/schouders/neck/hoofd
+        weight: 1
+      - path: spline/torso/schouders/R_arm_top
+        weight: 1
+      - path: spline/torso/schouders/R_arm_top/R_arm_elbow
+        weight: 1
+      - path: spline/torso/schouders/R_arm_top/R_arm_elbow/R_arm_wrist
+        weight: 1
+      - path: spline/torso/schouders/R_arm_top/R_arm_elbow/R_arm_wrist/R_arm_hand
+        weight: 1
+      - path: Symmetry
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ba7a2082f484edc459a8624ef2a30421,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
