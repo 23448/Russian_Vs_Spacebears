@@ -12,9 +12,16 @@ public class Player_Shooting : MonoBehaviour {
     [SerializeField]
     private Transform Player;
     [SerializeField]
+    private Transform Bear;
+    [SerializeField]
     private Rigidbody rigidbody;
+    [SerializeField]
+    private GameObject beer;
 
     public Text reloadText;
+
+    [SerializeField]
+    private float distance = 15.0f;
 
     float dir;
     float timer;
@@ -26,6 +33,7 @@ public class Player_Shooting : MonoBehaviour {
     float effectsDisplayTime = 0.1f;
     public AudioSource gunAudio;
     public AudioSource emptyGun;
+    EnemyHealth bearHealth;
 
     public float clips = 15;
     public float bulletsPerClip = 3;
@@ -36,11 +44,21 @@ public class Player_Shooting : MonoBehaviour {
     {
         anim = GetComponent<Animator>();
         bulletsLeft = bulletsPerClip;
-        
+        bearHealth = beer.GetComponent<EnemyHealth>();
     }
 
     public void FixedUpdate()
     {
+        var currentDistance = Vector3.Distance(Player.position, transform.position);
+        var currentDistanceBear = Vector3.Distance(Bear.position, transform.position);
+
+        if (currentDistance <= currentDistanceBear + distance && Input.GetKey(KeyCode.F))
+        {
+            Debug.Log("MAon");
+            bearHealth.TakeDamage(100, Bear.transform.position);
+            //bearHealth.Death();
+        }
+
         Reload();
 
         if (Input.GetMouseButton(0) && Time.time > nextFire && bulletsLeft != 0)

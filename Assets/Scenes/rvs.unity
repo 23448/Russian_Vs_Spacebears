@@ -5807,7 +5807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1085837440
 Transform:
   m_ObjectHideFlags: 0
@@ -7589,6 +7589,23 @@ Prefab:
       propertyPath: emptyGun
       value: 
       objectReference: {fileID: 1490095242}
+    - target: {fileID: 114081703964606490, guid: b9c56b0003262de4594409726997573d,
+        type: 2}
+      propertyPath: Bear
+      value: 
+      objectReference: {fileID: 4798752090952040, guid: 94ea1bdd07dc95c45926d17714f0993e,
+        type: 2}
+    - target: {fileID: 114081703964606490, guid: b9c56b0003262de4594409726997573d,
+        type: 2}
+      propertyPath: beer
+      value: 
+      objectReference: {fileID: 1614961334064188, guid: 94ea1bdd07dc95c45926d17714f0993e,
+        type: 2}
+    - target: {fileID: 114081703964606490, guid: b9c56b0003262de4594409726997573d,
+        type: 2}
+      propertyPath: distance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9c56b0003262de4594409726997573d, type: 2}
   m_IsPrefabParent: 0
