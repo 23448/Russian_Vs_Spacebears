@@ -44,7 +44,7 @@ public class EnemyAi : MonoBehaviour {
                 {
                     nav.speed = moveSpeedRunning;
                     sprintTime -= Time.deltaTime;
-                    anim.speed = 2;
+                    anim.speed = 1.5f;
                     if (sprintTime <= 0)
                     {
                         nav.speed = moveSpeedNormal;

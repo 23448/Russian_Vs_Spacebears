@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1446233018}
-  m_IndirectSpecularColor: {r: 0.0065066474, g: 0.006785954, b: 0.006308139, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -902,7 +902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fa2b4f3f3e095439aa16b06b173b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1536530931}
+  Canvas: {fileID: 0}
 --- !u!1001 &318190137
 Prefab:
   m_ObjectHideFlags: 0
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e385d63c4f6f74d897be9fbc812bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1366237527}
+  Canvas: {fileID: 0}
 --- !u!4 &368810610 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f55a85edf7d5bd24596ee0a72d70e385, type: 2}
@@ -2380,11 +2380,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25ea4db1a7d31441bde07080fd37967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 10
-  offset: -50
+  distance: 15
+  offset: 2
   endingText: {fileID: 0}
   textTime: 2
-  endText: {fileID: 334643721}
+  endText: {fileID: 0}
 --- !u!1 &488959423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,7 +2728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e385d63c4f6f74d897be9fbc812bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1375447062}
+  Canvas: {fileID: 0}
 --- !u!1 &573774650
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,8 +3219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7438f53e0c5aa414d9b7ac1e4e8711b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1488953720}
-  EndCanvas: {fileID: 802885486}
+  Canvas: {fileID: 0}
+  EndCanvas: {fileID: 0}
 --- !u!1001 &692640224
 Prefab:
   m_ObjectHideFlags: 0
@@ -4228,16 +4228,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-    intensity: 1.52
-    radius: 0.5
-    sampleCount: 3
+    intensity: 1
+    radius: 0.3
+    sampleCount: 2
     sampleCountValue: 24
     downsampling: 0
     ambientOnly: 0
     occlusionSource: 1
     debug: 0
   _aoShader: {fileID: 4800000, guid: 65e203e5acda447acbf9dc1ef78c4a39, type: 3}
-  _quadMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  _quadMesh: {fileID: 0}
 --- !u!114 &870133685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4258,18 +4258,18 @@ MonoBehaviour:
     amountY: 1
     scale: 1
   vignette:
-    enabled: 1
+    enabled: 0
     color: {r: 0, g: 0, b: 0, a: 1}
     center: {x: 0.5, y: 0.5}
-    intensity: 0.95
-    smoothness: 1.07
-    roundness: 0.735
+    intensity: 1.4
+    smoothness: 0.8
+    roundness: 1
     blur: 0
     desaturate: 0
   chromaticAberration:
-    enabled: 1
-    color: {r: 0.10510382, g: 0.5118542, b: 0.5294118, a: 1}
-    amount: 2.5
+    enabled: 0
+    color: {r: 0, g: 1, b: 0, a: 1}
+    amount: 0
   m_Shader: {fileID: 4800000, guid: 136ab50fe2b9ad64d9c22adc3668abb7, type: 3}
 --- !u!114 &870133686
 MonoBehaviour:
@@ -4284,11 +4284,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     threshold: 0.9
-    softKnee: 0.767
-    radius: 2.11
-    intensity: 2
+    softKnee: 0.5
+    radius: 2
+    intensity: 0.7
     highQuality: 1
-    antiFlicker: 1
+    antiFlicker: 0
     dirtTexture: {fileID: 0}
     dirtIntensity: 2.5
   m_Shader: {fileID: 4800000, guid: e45d4f28262b04d10a075856ab5fdb5e, type: 3}
@@ -4304,13 +4304,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settings:
-    shutterAngle: 360
+    shutterAngle: 270
     sampleCount: 10
     frameBlending: 0
-  _reconstructionShader: {fileID: 4800000, guid: 7ea8cfee2809541fa81c5ed422ded933,
-    type: 3}
-  _frameBlendingShader: {fileID: 4800000, guid: 83da3aecb8b462f498946f5198cbd58e,
-    type: 3}
+  _reconstructionShader: {fileID: 0}
+  _frameBlendingShader: {fileID: 0}
 --- !u!114 &870133690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4334,7 +4332,7 @@ MonoBehaviour:
     speed: 1.5
     showDebug: 0
   m_Tonemapping:
-    enabled: 1
+    enabled: 0
     tonemapper: 6
     exposure: 1
     curve:
@@ -4362,22 +4360,22 @@ MonoBehaviour:
     neutralWhiteLevel: 5.3
     neutralWhiteClip: 10
   m_ColorGrading:
-    enabled: 1
+    enabled: 0
     precision: 16
     colorWheels:
-      shadows: {r: 1, g: 0.73309624, b: 0.5109365, a: 1}
-      midtones: {r: 0.664862, g: 0.8581478, b: 1, a: 1}
-      highlights: {r: 0.6126698, g: 0.7508876, b: 1, a: 1}
+      shadows: {r: 1, g: 1, b: 1, a: 1}
+      midtones: {r: 1, g: 1, b: 1, a: 1}
+      highlights: {r: 1, g: 1, b: 1, a: 1}
     basics:
       temperatureShift: 0
       tint: 0
       hue: 0
-      saturation: 1.06
-      vibrance: 0.22
-      value: 1.45
-      contrast: 0.94
-      gain: 1.87
-      gamma: 0.85
+      saturation: 1
+      vibrance: 0
+      value: 1
+      contrast: 1
+      gain: 1
+      gamma: 1
     channelMixer:
       currentChannel: 0
       channels:
@@ -4390,7 +4388,7 @@ MonoBehaviour:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.012493908
+          value: 0
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -4402,7 +4400,7 @@ MonoBehaviour:
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 0
+        m_RotationOrder: 4
       red:
         serializedVersion: 2
         m_Curve:
@@ -4420,7 +4418,7 @@ MonoBehaviour:
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 0
+        m_RotationOrder: 4
       green:
         serializedVersion: 2
         m_Curve:
@@ -4438,7 +4436,7 @@ MonoBehaviour:
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 0
+        m_RotationOrder: 4
       blue:
         serializedVersion: 2
         m_Curve:
@@ -4456,7 +4454,7 @@ MonoBehaviour:
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 0
+        m_RotationOrder: 4
     useDithering: 0
     showDebug: 0
   m_Lut:
@@ -5109,7 +5107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefe90581898946448c0882bfc56fb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1366237527}
+  Canvas: {fileID: 0}
 --- !u!114 &977841082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5504,7 +5502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefe90581898946448c0882bfc56fb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1375447062}
+  Canvas: {fileID: 0}
 --- !u!4 &1066171523 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f55a85edf7d5bd24596ee0a72d70e385, type: 2}
@@ -6249,9 +6247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a98ce8572093f4eaadbb2cd8d28c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
-  offset: 15
-  cooldown: 100
+  distance: 15
+  offset: 2
+  cooldown: 2
 --- !u!1 &1186806110
 GameObject:
   m_ObjectHideFlags: 0
@@ -6300,7 +6298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4afeabbc5aff8419ba1f0a40b7a278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 802885486}
+  Canvas: {fileID: 0}
 --- !u!114 &1186806113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7320,9 +7318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b855e6ca0e450ab4595bbc665895aceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1366237527}
-  hudCanvas: {fileID: 1699211647}
-  backgroundMusic: {fileID: 1799828701}
+  Canvas: {fileID: 0}
+  hudCanvas: {fileID: 0}
+  backgroundMusic: {fileID: 0}
 --- !u!114 &1366237529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7781,7 +7779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4afeabbc5aff8419ba1f0a40b7a278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 1536530931}
+  Canvas: {fileID: 0}
 --- !u!114 &1429260938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8960,9 +8958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a98ce8572093f4eaadbb2cd8d28c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
-  offset: 15
-  cooldown: 100
+  distance: 15
+  offset: 2
+  cooldown: 2
 --- !u!1 &1646460779
 GameObject:
   m_ObjectHideFlags: 0
