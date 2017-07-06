@@ -6,3 +6,6 @@
 <p>Jordy de Waal</p>
 <p>Mikal Keuning</p>
 <br>
+<p>GameDevelopers</p>
+<p>Floyd Lehman</p>
+<p>Jordan Salvador</p>
