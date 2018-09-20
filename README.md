@@ -1,27 +1,26 @@
 
 # Russians Vs Spacebears
 
-<img src="http://i.imgur.com/C4h80cE.png" height = 300px;>
-
-This game was made to discover how the original minesweeper game algorithms were made,
-and for me to learn some more things in javascript.
+This is a topdown shooter game and your purpose is to escape from the bears and go of the moon back to earth.
+this game is based on a true fact that the russians went to space with dual barreled shotguns
+because they were afraid of what was up there cause they thought there were bears on the moon.
 
 ## Features
 
-- [Cell Algorithems](https://github.com/FloydMa1/Minesweepre-proto/blob/master/cell.js)
-- [When the game gets made](https://github.com/FloydMa1/Minesweepre-proto/blob/master/draw.js)
+- [Player mechanics](https://github.com/23448/Russian_Vs_Spacebears/tree/master/Assets/Scripts/Player)
+- [Bear spawning](https://github.com/23448/Russian_Vs_Spacebears/tree/master/Assets/Scripts/Enemy/EnemyWaveSpawner)
+- [Bear mechanics](https://github.com/23448/Russian_Vs_Spacebears/tree/master/Assets/Scripts/Enemy/AI)
+- [UI things](https://github.com/23448/Russian_Vs_Spacebears/tree/master/Assets/Scripts/GUI)
 
 ## Software Anaylse 
-i made my minesweeper prototype in javascript so i didn't have to do many research for the software
+The software i was using was Unity Engine to make this project,
+luckely for me i had some early experience with Unity so i went through my research pretty quick.
 
 ## Learning goals 
 What i wanted to learn making this project
-- The FloodFill algorithem
-- Making it in javascript
-- making the algotihem reusable
-
-## Try the game below
-- [The Game](http://22355.hosts.ma-cloud.nl/bewijzenmap/ms/)
+- Making a fully working AI
+- Making a polished game
+- Learning to work with deadlines
 
 ## Portfolio
 Click below to go to my portfolio.
